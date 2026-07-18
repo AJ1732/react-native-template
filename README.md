@@ -36,8 +36,8 @@ src/
   components/
     atoms/        design-system primitives (Button, Text, Switch, ExternalLink)
     icons/        SVG icon components
-  lib/            auth store, storage contract, theme preference, colors, theme, haptics, cn()
-  types/          shared types
+  lib/            auth store, storage contract, theme preference, color-scheme sync, colors, theme, haptics, cn() (+ co-located *.test.ts)
+  types/          shared types + env.d.ts (expo/types reference; keeps CI typecheck working)
 ```
 
 ## Conventions
