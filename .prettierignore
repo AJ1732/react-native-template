@@ -1,0 +1,9 @@
+.expo
+android
+ios
+dist
+build
+node_modules
+expo-env.d.ts
+nativewind-env.d.ts
+package-lock.json
