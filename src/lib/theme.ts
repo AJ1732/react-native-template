@@ -29,6 +29,14 @@ const semanticColors = {
   },
 } as const;
 
+// App background per scheme. Painted onto the native window so the area behind
+// Android's transparent system bars matches the app instead of the OS-default
+// white. Keep in step with semanticColors.*.canvas.
+export const canvasColor = {
+  light: semanticColors.light.canvas,
+  dark: semanticColors.dark.canvas,
+} as const;
+
 function rgbChannels(hex: string) {
   const value = hex.replace("#", "");
   const r = parseInt(value.slice(0, 2), 16);

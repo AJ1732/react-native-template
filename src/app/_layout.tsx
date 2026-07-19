@@ -1,4 +1,7 @@
 import "./global.css";
+// Side effect: paints the native window background to match the app canvas so
+// Android's transparent system bars do not show white.
+import "@/lib/system-background";
 
 import { type FontSource, useFonts } from "expo-font";
 import { type ErrorBoundaryProps, Stack } from "expo-router";
