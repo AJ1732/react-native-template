@@ -70,7 +70,7 @@ export default function RootLayout() {
           SplashScreen.hideAsync();
         }}
       >
-        <StatusBar style="auto" />
+        <StatusBar style={colorScheme === "dark" ? "light" : "dark"} />
         <Stack
           screenOptions={{
             headerShown: false,
